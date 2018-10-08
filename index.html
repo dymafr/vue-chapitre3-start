@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue</title>
+  <script type="text/javascript" src="./node_modules/vue/dist/vue.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="col-12">
+          <hr />
+          <div class="form-group">
+            <label>Vert : </label>
+            <input class="form-control" type="number" />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label>Bleu : </label>
+            <input class="form-control" type="number" />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label>Rouge :</label>
+            <input class="form-control" type="number" />
+          </div>
+          <hr />
+          <div class="col-12">
+            <button class="btn btn-primary">Sauvegarder</button>
+            <button class="btn btn-secondary">Annuler</button>
+          </div>
+          <hr />
+            <h3> Nombre de carrés : </h3>
+          <hr />
+          <div class="col-12">
+            <div class="prevsquare"></div>
+          </div>
+          <h3 > Ajouter des couleurs !</h3>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="square mx-auto" ></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    new Vue({
+      el:'#app',
+      data: {
+      }
+    })
+  </script>
+</body>
+</html>
